@@ -37,7 +37,7 @@ header {
 .statcontainer {
   display: block;
   list-style-type: none;
-  overflow-y: hidden;
+  overflow-y: auto;
   width: fit-content;
   text-align: center;
   justify-content: center;
@@ -134,7 +134,7 @@ form {
   text-align: center;
   width: fit-content;
   overflow-x: hidden;
-  overflow: hidden;
+  overflow-y: auto;
 }
 input {
   width: fit-content;
