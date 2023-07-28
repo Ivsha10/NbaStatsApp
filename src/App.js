@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
-
+import './index.css';
+import Header from './Header';
+import Home from './Home';
+import PlayerSection from './PlayerSection';
+import TopScorers from './TopScorers';
+import TopAssists from './TopAssists';
+import TopRebounders from './TopRebounders';
+import ComparePlayers from './ComparePlayers';
+import Footer from './Footer';
+import { Routes, Route, useNavigate } from 'react-router-dom';
 function App() {
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header/>
+      <Routes>
+        <Route path='/' element={<Home/>}/>
+        <Route path='/playerbyname' element={<PlayerSection/>}/>
+        <Route path='/topscorers' element={<TopScorers/>}/>
+        <Route path='/topscorersplayoffs' element={<TopScorers/>}/>
+        <Route path='/topassists' element={<TopAssists/>}/>
+        <Route path='/topassistsplayoffs' element={<TopAssists/>}/>
+        <Route path='/toprebounders' element={<TopRebounders/>}/>
+        <Route path='/compareplayers' element={<ComparePlayers/>} />
+      </Routes>
     </div>
   );
+
 }
+
 
 export default App;
