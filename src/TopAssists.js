@@ -33,7 +33,7 @@ const TopAssists = () => {
    }
     return (
         <form className="playerbyname">
-            <ul className="topscorerscontainer">
+            <ul >
                {list.map(item => 
                 <li className="scoreritem">
                     Name: {item[0]} <br/> Team: {item[1]} <br/> Assists: {item[2]}
