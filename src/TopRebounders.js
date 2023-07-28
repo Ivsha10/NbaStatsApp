@@ -30,7 +30,7 @@ const TopRebounders = () => {
    }
     return (
         <form className="playerbyname">
-        <ul className="topscorerscontainer">
+        <ul>
            {list.map(item => 
             <li className="scoreritem">
                 Name: {item[0]} <br/> Team: {item[1]} <br/> Rebounds: {item[2]}
